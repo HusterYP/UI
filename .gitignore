@@ -1,0 +1,7 @@
+UIList/app/build/
+/UIList/gradle/
+/UIList/gradle.properties
+/UIList/gradlew
+/UIList/gradlew.bat
+/UIList/local.properties
+/UIList/settings.gradle
