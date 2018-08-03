@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">UIList</string>
+    <string name="drag">Drag View</string>
+    <string name="drag_view_first">Drag View First</string>
 </resources>
