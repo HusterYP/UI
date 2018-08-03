@@ -25,9 +25,7 @@ public class RvUtils {
     public static void setCommonRv(RecyclerView rv, List<Class> listeners,
                                    List<String> titles, Context context) {
         rv.setLayoutManager(new LinearLayoutManager(Application.sAppContext, LinearLayoutManager.VERTICAL, false));
-        DividerItemDecoration itemDecoration = new DividerItemDecoration(context, DividerItemDecoration.VERTICAL);
-        itemDecoration.setDrawable(new ColorDrawable(Color.parseColor("#FF0000")));
-        rv.addItemDecoration(itemDecoration);
+        rv.addItemDecoration(new DividerItemDecoration(context,DividerItemDecoration.VERTICAL));
         rv.setAdapter(new CommonAdapter(titles, listeners, context));
     }
 }
