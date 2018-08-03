@@ -17,15 +17,11 @@ public class ScreenUtils {
     private static Context sContext = Application.sAppContext;
 
     public static int getScreenWidth() {
-        DisplayMetrics metrics = new DisplayMetrics();
-        ((Activity)sContext).getWindowManager().getDefaultDisplay().getMetrics(metrics);
-        return metrics.widthPixels;
+        return sContext.getResources().getDisplayMetrics().widthPixels;
     }
 
     public static int getScreenHeight() {
-        DisplayMetrics metrics = new DisplayMetrics();
-        ((Activity)sContext).getWindowManager().getDefaultDisplay().getMetrics(metrics);
-        return metrics.heightPixels;
+        return sContext.getResources().getDisplayMetrics().heightPixels;
     }
 
     public static int dpTopx(int dp) {

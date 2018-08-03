@@ -41,14 +41,16 @@ public class CommonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, final int position) {
         ((RvViewHolder)holder).tvItem.setText(titles.get(position));
         ((RvViewHolder)holder).tvItem.setClickable(true);
-        ((RvViewHolder)holder).tvItem.setOnClickListener(new View.OnClickListener(){
+        if (listeners != null && listeners.size() == titles.size()) {
+            ((RvViewHolder)holder).tvItem.setOnClickListener(new View.OnClickListener(){
 
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Application.sAppContext, listeners.get(position));
-                mContext.startActivity(intent);
-            }
-        });
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(Application.sAppContext, listeners.get(position));
+                    mContext.startActivity(intent);
+                }
+            });
+        }
     }
 
     @Override
