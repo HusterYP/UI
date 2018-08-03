@@ -28,12 +28,14 @@ public class DragActivity extends AppCompatActivity {
     private List<String> getTitles() {
         List<String> titles = new ArrayList<>();
         titles.add(AssetsUtils.getStringFromResource(R.string.drag_view_first));
+        titles.add(AssetsUtils.getStringFromResource(R.string.drag_view_second));
         return titles;
     }
 
     private List<Class> getClazz() {
         List<Class> clazz = new ArrayList<>();
         clazz.add(DragViewFirst.class);
+        clazz.add(DragViewSecond.class);
         return clazz;
     }
 }

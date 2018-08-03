@@ -18,7 +18,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".drag.DragActivity" />
-        <activity android:name=".drag.DragViewFirst"></activity>
+        <activity android:name=".drag.DragViewFirst" />
+        <activity android:name=".drag.DragViewSecond"></activity>
     </application>
 
 </manifest>
