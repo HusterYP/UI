@@ -28,6 +28,9 @@ public class DragViewSecondGroup extends ViewGroup {
     private TextView tvHead;
     private TextView tvContent;
 
+    private int mTop = 0;
+    private boolean isAtTop = true;
+
     private ViewDragHelper mDragHelper = ViewDragHelper.create(this, 1.0f, new MyDragCallBack());
 
     public DragViewSecondGroup(Context context) {
@@ -57,9 +60,9 @@ public class DragViewSecondGroup extends ViewGroup {
 
     @Override
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
-        tvHead.layout(0, 0, ScreenUtils.getScreenWidth(), ScreenUtils.dpTopx(180));
-        tvContent.layout(0, ScreenUtils.dpTopx(180), ScreenUtils.getScreenWidth(), ScreenUtils
-                .getScreenHeight());
+        tvHead.layout(0, mTop, r, mTop + tvHead.getMeasuredHeight());
+        tvContent.layout(0, mTop + tvHead.getMeasuredHeight(), r, mTop + tvHead.getMeasuredHeight
+                () + tvContent.getMeasuredHeight());
     }
 
     @Override
@@ -70,7 +73,11 @@ public class DragViewSecondGroup extends ViewGroup {
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         mDragHelper.processTouchEvent(event);
-        return true;
+        if (isAtTop || event.getRawY() > getMeasuredHeight() - tvHead.getMeasuredHeight()) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     @Override
@@ -80,44 +87,87 @@ public class DragViewSecondGroup extends ViewGroup {
         }
     }
 
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        measureChildren(widthMeasureSpec, heightMeasureSpec);
+        int maxWidth = MeasureSpec.getSize(widthMeasureSpec);
+        int maxHeight = MeasureSpec.getSize(heightMeasureSpec);
+        setMeasuredDimension(resolveSizeAndState(maxWidth, widthMeasureSpec, 0),
+                resolveSizeAndState(maxHeight, heightMeasureSpec, 0));
+    }
+
     private class MyDragCallBack extends ViewDragHelper.Callback {
 
         @Override
         public boolean tryCaptureView(@NonNull View child, int pointerId) {
-            if (child.getId() == R.id.tv_head) {
-                return true;
-            }
-            return false;
+            return child.getId() == R.id.tv_head;
         }
 
         @Override
         public void onViewPositionChanged(@NonNull View changedView, int left, int top, int dx,
                                           int dy) {
+            mTop = top;
             float scaleX = ((float) left) / ScreenUtils.getScreenWidth();
             float scaleY = ((float) top) / ScreenUtils.getScreenHeight();
             float mDragOffset = Math.max(scaleX, scaleY);
-
-            tvHead.setPivotX(tvHead.getWidth());
-            tvHead.setPivotY(tvHead.getHeight());
+            tvHead.setPivotX(tvHead.getMeasuredWidth());
+            tvHead.setPivotY(tvHead.getMeasuredHeight());
             tvHead.setScaleX(1 - mDragOffset / 2);
             tvHead.setScaleY(1 - mDragOffset / 2);
             tvContent.setAlpha(1 - mDragOffset);
-
             requestLayout();
         }
 
         @Override
         public int clampViewPositionHorizontal(@NonNull View child, int left, int dx) {
             int leftBound = getPaddingLeft();
-            int rightBound = 0;
+            int rightBound = getMeasuredWidth() - child.getMeasuredWidth();
             return Math.min(Math.max(left, leftBound), rightBound);
         }
 
         @Override
         public int clampViewPositionVertical(@NonNull View child, int top, int dy) {
             int topBound = getPaddingTop();
-            int bottomBound = getMeasuredHeight() - ScreenUtils.dpTopx(180);
+            int bottomBound = getMeasuredHeight() - child.getMeasuredHeight();
             return Math.min(Math.max(topBound, top), bottomBound);
+        }
+
+        @Override
+        public void onViewReleased(@NonNull View releasedChild, float xvel, float yvel) {
+//            if (releasedChild.getTop() > ScreenUtils.getScreenHeight() / 2) {
+//                if (mDragHelper.smoothSlideViewTo(releasedChild, 0, 0)) {
+//                    ViewCompat.postInvalidateOnAnimation(releasedChild);
+//                    postInvalidate();
+//                }
+//            } else {
+//                if (mDragHelper.smoothSlideViewTo(releasedChild, getMeasuredWidth(),
+//                        getMeasuredHeight())) {
+//                    ViewCompat.postInvalidateOnAnimation(releasedChild);
+//                    postInvalidate();
+//                }
+//            }
+            if (isAtTop) {
+                if (releasedChild.getTop() < ScreenUtils.getScreenHeight() / 3 &&
+                        Math.abs(yvel) < 3000) {
+                    isAtTop = true;
+                    mDragHelper.settleCapturedViewAt(0, 0);
+                } else {
+                    isAtTop = false;
+                    mDragHelper.settleCapturedViewAt(0, getMeasuredHeight() - releasedChild
+                            .getMeasuredHeight());
+                }
+            } else {
+                if (releasedChild.getTop() > ScreenUtils.getScreenHeight() * 2 / 3 &&
+                        Math.abs(yvel) < 3000) {
+                    isAtTop = false;
+                    mDragHelper.settleCapturedViewAt(0, getMeasuredHeight() - releasedChild
+                            .getMeasuredHeight());
+                } else {
+                    isAtTop = true;
+                    mDragHelper.settleCapturedViewAt(0, 0);
+                }
+            }
+            invalidate();
         }
     }
 }
