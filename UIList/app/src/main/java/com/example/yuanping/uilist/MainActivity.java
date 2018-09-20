@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 
 import com.example.yuanping.uilist.drag.DragActivity;
+import com.example.yuanping.uilist.touch.TouchActivity;
 import com.example.yuanping.uilist.utils.AssetsUtils;
 import com.example.yuanping.uilist.utils.RvUtils;
 
@@ -33,12 +34,14 @@ public class MainActivity extends AppCompatActivity {
     private List<String> getTitles() {
         List<String> titles = new ArrayList<>();
         titles.add(AssetsUtils.getStringFromResource(R.string.drag));
+        titles.add(AssetsUtils.getStringFromResource(R.string.touch_event));
         return titles;
     }
 
     private List<Class> getClazz() {
         List<Class> listeners = new ArrayList<>();
         listeners.add(DragActivity.class);
+        listeners.add(TouchActivity.class);
         return listeners;
     }
 }

@@ -3,4 +3,5 @@
     <string name="drag">Drag View</string>
     <string name="drag_view_first">Drag View First</string>
     <string name="drag_view_second">Drag View Second</string>
+    <string name="touch_event">TouchEvent</string>
 </resources>
