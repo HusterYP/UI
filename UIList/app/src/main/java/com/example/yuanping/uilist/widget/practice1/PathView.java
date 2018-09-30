@@ -1,8 +1,11 @@
-package com.example.yuanping.uilist.widget;
+package com.example.yuanping.uilist.widget.practice1;
 
 import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.Path;
+import android.graphics.RectF;
 import android.os.Build;
 import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
@@ -14,26 +17,28 @@ import com.example.yuanping.uilist.utils.ScreenUtils;
 /**
  * @created by PingYuan at 9/30/18
  * @email: husteryp@gmail.com
- * @description: 画点
+ * @description: Path画心
  */
-public class PointView extends View {
+public class PathView extends View {
 
     private Paint mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+    private Path mPath = new Path();
 
-    public PointView(Context context) {
+    public PathView(Context context) {
         super(context);
     }
 
-    public PointView(Context context, @Nullable AttributeSet attrs) {
+    public PathView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public PointView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public PathView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 
+
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    public PointView(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int
+    public PathView(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int
             defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
     }
@@ -46,14 +51,11 @@ public class PointView extends View {
 
     @Override
     protected void onDraw(Canvas canvas) {
-        int width = getMeasuredWidth();
-        int height = getMeasuredHeight();
-        mPaint.setStrokeWidth(50);
-        mPaint.setStrokeCap(Paint.Cap.BUTT);
-        canvas.drawPoint(width / 2 - 100, height / 2, mPaint);
-
-        mPaint.setStrokeCap(Paint.Cap.ROUND);
-        canvas.drawPoint(width / 2 + 100, height / 2, mPaint);
-
+        mPath.addArc(new RectF(200, 200, 400, 400), -225, 225);
+        mPath.arcTo(new RectF(400, 200, 600, 400), -180, 225, false);
+        mPath.lineTo(400, 542);
+        mPaint.setStyle(Paint.Style.FILL);
+        mPaint.setColor(Color.RED);
+        canvas.drawPath(mPath, mPaint);
     }
 }

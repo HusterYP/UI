@@ -1,11 +1,9 @@
-package com.example.yuanping.uilist.widget;
+package com.example.yuanping.uilist.widget.practice1;
 
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.graphics.Path;
-import android.graphics.RectF;
 import android.os.Build;
 import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
@@ -17,28 +15,26 @@ import com.example.yuanping.uilist.utils.ScreenUtils;
 /**
  * @created by PingYuan at 9/30/18
  * @email: husteryp@gmail.com
- * @description: Path画心
+ * @description: 矩形View
  */
-public class PathView extends View {
+public class RectView extends View {
 
     private Paint mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-    private Path mPath = new Path();
 
-    public PathView(Context context) {
+    public RectView(Context context) {
         super(context);
     }
 
-    public PathView(Context context, @Nullable AttributeSet attrs) {
+    public RectView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public PathView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public RectView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 
-
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    public PathView(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int
+    public RectView(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int
             defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
     }
@@ -51,11 +47,10 @@ public class PathView extends View {
 
     @Override
     protected void onDraw(Canvas canvas) {
-        mPath.addArc(new RectF(200, 200, 400, 400), -225, 225);
-        mPath.arcTo(new RectF(400, 200, 600, 400), -180, 225, false);
-        mPath.lineTo(400, 542);
+        int width = getMeasuredWidth();
+        int height = getMeasuredHeight();
         mPaint.setStyle(Paint.Style.FILL);
-        mPaint.setColor(Color.RED);
-        canvas.drawPath(mPath, mPaint);
+        mPaint.setColor(Color.BLACK);
+        canvas.drawRect(width / 2 - 100, height / 2 - 100, width / 2 + 100, height / 2 + 100, mPaint);
     }
 }

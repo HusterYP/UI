@@ -1,4 +1,4 @@
-package com.example.yuanping.uilist.widget;
+package com.example.yuanping.uilist.widget.practice1;
 
 import android.content.Context;
 import android.graphics.Canvas;

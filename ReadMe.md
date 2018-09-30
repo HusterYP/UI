@@ -39,6 +39,6 @@
 
 <img src="https://github.com/HusterYP/UI/blob/master/Pic/Widget.gif" width="400" height="600"/>
 
-配套博客参见: [ReadMe](https://github.com/HusterYP/UI/blob/master/UIList/app/src/main/java/com/example/yuanping/uilist/widget/ReadMe.md)
+配套博客参见: [ReadMe](https://github.com/HusterYP/UI/blob/master/UIList/app/src/main/java/com/example/yuanping/uilist/widget/practice1/ReadMe.md)
 
 

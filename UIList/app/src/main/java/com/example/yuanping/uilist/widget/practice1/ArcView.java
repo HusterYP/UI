@@ -1,4 +1,4 @@
-package com.example.yuanping.uilist.widget;
+package com.example.yuanping.uilist.widget.practice1;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -16,26 +16,26 @@ import com.example.yuanping.uilist.utils.ScreenUtils;
 /**
  * @created by PingYuan at 9/30/18
  * @email: husteryp@gmail.com
- * @description: 椭圆View
+ * @description: 弧线
  */
-public class OvalView extends View {
+public class ArcView extends View {
 
     private Paint mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 
-    public OvalView(Context context) {
+    public ArcView(Context context) {
         super(context);
     }
 
-    public OvalView(Context context, @Nullable AttributeSet attrs) {
+    public ArcView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public OvalView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public ArcView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    public OvalView(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int
+    public ArcView(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int
             defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
     }
@@ -50,10 +50,16 @@ public class OvalView extends View {
     protected void onDraw(Canvas canvas) {
         int width = getMeasuredWidth();
         int height = getMeasuredHeight();
-
         mPaint.setStyle(Paint.Style.FILL);
         mPaint.setColor(Color.BLACK);
-        canvas.drawOval(new RectF(width / 2 - 200, height / 2 - 50, width / 2 + 200, height / 2 +
-                50), mPaint);
+        canvas.drawArc(new RectF(width / 2 - 200, height / 2 - 100, width / 2 + 200, height / 2 +
+                100), 20, 100, true, mPaint);
+
+        canvas.drawArc(new RectF(width / 2 - 200, height / 2 - 100, width / 2 + 200, height / 2 +
+                100), -120, 100, false, mPaint);
+
+        mPaint.setStyle(Paint.Style.STROKE);
+        canvas.drawArc(new RectF(width / 2 - 200, height / 2 - 100, width / 2 + 200, height / 2 +
+                100), 180, 30, false, mPaint);
     }
 }

@@ -1,4 +1,4 @@
-package com.example.yuanping.uilist.widget;
+package com.example.yuanping.uilist.widget.practice1;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -14,26 +14,26 @@ import com.example.yuanping.uilist.utils.ScreenUtils;
 /**
  * @created by PingYuan at 9/30/18
  * @email: husteryp@gmail.com
- * @description: 画线
+ * @description: 画点
  */
-public class LineView extends View {
+public class PointView extends View {
 
     private Paint mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 
-    public LineView(Context context) {
+    public PointView(Context context) {
         super(context);
     }
 
-    public LineView(Context context, @Nullable AttributeSet attrs) {
+    public PointView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public LineView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public PointView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    public LineView(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int
+    public PointView(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int
             defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
     }
@@ -48,9 +48,12 @@ public class LineView extends View {
     protected void onDraw(Canvas canvas) {
         int width = getMeasuredWidth();
         int height = getMeasuredHeight();
-        mPaint.setStyle(Paint.Style.STROKE);
-        mPaint.setStrokeWidth(2);
-        canvas.drawLine(width / 2 - 100, height / 2 - 100, width / 2 + 100, height / 2 + 100,
-                mPaint);
+        mPaint.setStrokeWidth(50);
+        mPaint.setStrokeCap(Paint.Cap.BUTT);
+        canvas.drawPoint(width / 2 - 100, height / 2, mPaint);
+
+        mPaint.setStrokeCap(Paint.Cap.ROUND);
+        canvas.drawPoint(width / 2 + 100, height / 2, mPaint);
+
     }
 }

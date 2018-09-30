@@ -1,4 +1,4 @@
-package com.example.yuanping.uilist.widget;
+package com.example.yuanping.uilist.widget.practice1;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -9,9 +9,7 @@ import android.graphics.RectF;
 import android.os.Build;
 import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
-import android.text.style.MaskFilterSpan;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 
 import com.example.yuanping.uilist.utils.ScreenUtils;
