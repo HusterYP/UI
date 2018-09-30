@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="46dp">
 
-    <com.example.yuanping.uilist.widget.RippleTextView
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="match_parent"
         android:textAllCaps="false"
         android:textSize="50px"
         android:gravity="center"
+        android:background="@android:color/darker_gray"
         android:text="Hello World"
         android:clickable="true"
         android:id="@+id/tv_item_main"/>

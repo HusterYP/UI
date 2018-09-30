@@ -6,6 +6,7 @@ import android.support.v7.widget.RecyclerView;
 
 import com.example.yuanping.uilist.drag.DragActivity;
 import com.example.yuanping.uilist.touch.TouchActivity;
+import com.example.yuanping.uilist.ui.UIActivity;
 import com.example.yuanping.uilist.utils.AssetsUtils;
 import com.example.yuanping.uilist.utils.RvUtils;
 
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         List<String> titles = new ArrayList<>();
         titles.add(AssetsUtils.getStringFromResource(R.string.drag));
         titles.add(AssetsUtils.getStringFromResource(R.string.touch_event));
+        titles.add(AssetsUtils.getStringFromResource(R.string.ui));
         return titles;
     }
 
@@ -42,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         List<Class> listeners = new ArrayList<>();
         listeners.add(DragActivity.class);
         listeners.add(TouchActivity.class);
+        listeners.add(UIActivity.class);
         return listeners;
     }
 }

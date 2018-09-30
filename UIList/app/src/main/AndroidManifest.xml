@@ -20,7 +20,8 @@
         <activity android:name=".drag.DragActivity" />
         <activity android:name=".drag.DragViewFirst" />
         <activity android:name=".drag.DragViewSecond" />
-        <activity android:name=".touch.TouchActivity"></activity>
+        <activity android:name=".touch.TouchActivity" />
+        <activity android:name=".ui.UIActivity"></activity>
     </application>
 
 </manifest>

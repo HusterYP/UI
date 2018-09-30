@@ -18,6 +18,7 @@ import android.widget.TextView;
  * @description: 一个骚气的带点击效果的TextView
  * e...其实就是水波纹, hh, 皮一下
  * @参见: 参考博文 : https://blog.csdn.net/singwhatiwanna/article/details/42614953
+ * 未完...
  */
 public class RippleTextView extends TextView {
     private int downX = 0;
