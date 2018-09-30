@@ -20,9 +20,7 @@
 
 手势拖动, 参见下图: 
 
-<video src="https://github.com/HusterYP/UI/blob/master/Pic/DragView.mp4" width="320" height="240" controls="controls">
-Your browser does not support the video tag.
-</video>
+![DragView](../../Pic/DragView.gif)
 
 参考博客参见: [ReadMe](https://github.com/HusterYP/UI/blob/master/UIList/app/src/main/java/com/example/yuanping/uilist/drag/ReadMe.md)
 
@@ -39,9 +37,7 @@ Your browser does not support the video tag.
 
 自定义View练习, 如下图:
 
-<video src="https://github.com/HusterYP/UI/blob/master/Pic/Widget.mp4" width="320" height="240" controls="controls">
-Your browser does not support the video tag.
-</video>
+![Widget](../../Pic/Widget.gif)
 
 配套博客参见: [ReadMe](https://github.com/HusterYP/UI/blob/master/UIList/app/src/main/java/com/example/yuanping/uilist/widget/ReadMe.md)
 
