@@ -8,17 +8,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 
 import com.example.yuanping.uilist.R;
-import com.example.yuanping.uilist.widget.practice1.ArcView;
-import com.example.yuanping.uilist.widget.practice1.CircleView;
-import com.example.yuanping.uilist.widget.practice1.ColorView;
-import com.example.yuanping.uilist.widget.practice1.HistogramView;
-import com.example.yuanping.uilist.widget.practice1.LineView;
-import com.example.yuanping.uilist.widget.practice1.OvalView;
-import com.example.yuanping.uilist.widget.practice1.PathView;
-import com.example.yuanping.uilist.widget.practice1.PieChartView;
-import com.example.yuanping.uilist.widget.practice1.PointView;
-import com.example.yuanping.uilist.widget.practice1.RectView;
-import com.example.yuanping.uilist.widget.practice1.RoundRectView;
+import com.example.yuanping.uilist.widget.practice2.BitmapShaderView;
+import com.example.yuanping.uilist.widget.practice2.ColorMatrixFilterView;
+import com.example.yuanping.uilist.widget.practice2.ComposeShaderView;
+import com.example.yuanping.uilist.widget.practice2.LightingColorFilterView;
+import com.example.yuanping.uilist.widget.practice2.LinearGradientView;
+import com.example.yuanping.uilist.widget.practice2.RadialGradientView;
+import com.example.yuanping.uilist.widget.practice2.SweepGradientView;
+import com.example.yuanping.uilist.widget.practice2.XfermodeView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -58,14 +55,14 @@ public class Practice2 extends AppCompatActivity {
         titles.add("setTextPath()");
 
         List<Fragment> fragments = new ArrayList<>();
-        fragments.add(new UIFragment(new Button(this)));
-        fragments.add(new UIFragment(new Button(this)));
-        fragments.add(new UIFragment(new Button(this)));
-        fragments.add(new UIFragment(new Button(this)));
-        fragments.add(new UIFragment(new Button(this)));
-        fragments.add(new UIFragment(new Button(this)));
-        fragments.add(new UIFragment(new Button(this)));
-        fragments.add(new UIFragment(new Button(this)));
+        fragments.add(new UIFragment(new LinearGradientView(this)));
+        fragments.add(new UIFragment(new RadialGradientView(this)));
+        fragments.add(new UIFragment(new SweepGradientView(this)));
+        fragments.add(new UIFragment(new BitmapShaderView(this)));
+        fragments.add(new UIFragment(new ComposeShaderView(this)));
+        fragments.add(new UIFragment(new LightingColorFilterView(this)));
+        fragments.add(new UIFragment(new ColorMatrixFilterView(this)));
+        fragments.add(new UIFragment(new XfermodeView(this)));
         fragments.add(new UIFragment(new Button(this)));
         fragments.add(new UIFragment(new Button(this)));
         fragments.add(new UIFragment(new Button(this)));
