@@ -5,4 +5,6 @@
     <string name="drag_view_second">Drag View Second</string>
     <string name="touch_event">TouchEvent</string>
     <string name="ui">UI</string>
+    <string name="practice1">Practice1</string>
+    <string name="practice2">Practice2</string>
 </resources>

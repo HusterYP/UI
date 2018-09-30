@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.UIActivity">
+    tools:context=".ui.Practice1">
 
     <android.support.design.widget.TabLayout
         android:id="@+id/tabLayout"
@@ -12,6 +12,7 @@
         android:layout_height="48dp"
         android:background="@android:color/white"
         app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+        app:tabIndicatorColor="@color/colorAccent"
         app:tabMode="scrollable" />
 
     <android.support.v4.view.ViewPager

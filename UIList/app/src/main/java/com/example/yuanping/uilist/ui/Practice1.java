@@ -22,7 +22,7 @@ import com.example.yuanping.uilist.widget.practice1.RoundRectView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UIActivity extends AppCompatActivity {
+public class Practice1 extends AppCompatActivity {
 
     private ViewPager mViewPager;
     private TabLayout mTabLayout;

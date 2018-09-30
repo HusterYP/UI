@@ -21,7 +21,9 @@
         <activity android:name=".drag.DragViewFirst" />
         <activity android:name=".drag.DragViewSecond" />
         <activity android:name=".touch.TouchActivity" />
-        <activity android:name=".ui.UIActivity"></activity>
+        <activity android:name=".ui.Practice1" />
+        <activity android:name=".ui.ChoseActivity" />
+        <activity android:name=".ui.Practice2"></activity>
     </application>
 
 </manifest>

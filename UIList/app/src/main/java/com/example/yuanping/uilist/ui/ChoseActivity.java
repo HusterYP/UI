@@ -1,24 +1,17 @@
-package com.example.yuanping.uilist;
+package com.example.yuanping.uilist.ui;
 
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 
-import com.example.yuanping.uilist.drag.DragActivity;
-import com.example.yuanping.uilist.touch.TouchActivity;
-import com.example.yuanping.uilist.ui.ChoseActivity;
+import com.example.yuanping.uilist.R;
 import com.example.yuanping.uilist.utils.AssetsUtils;
 import com.example.yuanping.uilist.utils.RvUtils;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @created by PingYuan
- * @email: husteryp@gmail.com
- * @desciption: This project is practices for UI
- */
-public class MainActivity extends AppCompatActivity {
+public class ChoseActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,17 +27,15 @@ public class MainActivity extends AppCompatActivity {
 
     private List<String> getTitles() {
         List<String> titles = new ArrayList<>();
-        titles.add(AssetsUtils.getStringFromResource(R.string.drag));
-        titles.add(AssetsUtils.getStringFromResource(R.string.touch_event));
-        titles.add(AssetsUtils.getStringFromResource(R.string.ui));
+        titles.add(AssetsUtils.getStringFromResource(R.string.practice1));
+        titles.add(AssetsUtils.getStringFromResource(R.string.practice2));
         return titles;
     }
 
     private List<Class> getClazz() {
         List<Class> listeners = new ArrayList<>();
-        listeners.add(DragActivity.class);
-        listeners.add(TouchActivity.class);
-        listeners.add(ChoseActivity.class);
+        listeners.add(Practice1.class);
+        listeners.add(Practice2.class);
         return listeners;
     }
 }
