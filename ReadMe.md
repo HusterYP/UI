@@ -20,7 +20,7 @@
 
 手势拖动, 参见下图: 
 
-![DragView](../../Pic/DragView.gif)
+![DragView](https://github.com/HusterYP/UI/blob/master/Pic/DragView.gif)
 
 参考博客参见: [ReadMe](https://github.com/HusterYP/UI/blob/master/UIList/app/src/main/java/com/example/yuanping/uilist/drag/ReadMe.md)
 
@@ -37,7 +37,7 @@
 
 自定义View练习, 如下图:
 
-![Widget](../../Pic/Widget.gif)
+![Widget](https://github.com/HusterYP/UI/blob/master/Pic/Widget.gif)
 
 配套博客参见: [ReadMe](https://github.com/HusterYP/UI/blob/master/UIList/app/src/main/java/com/example/yuanping/uilist/widget/ReadMe.md)
 
