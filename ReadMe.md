@@ -37,7 +37,7 @@
 
 自定义View练习, 如下图:
 
-![Widget](https://github.com/HusterYP/UI/blob/master/Pic/Widget.gif=400*600)
+![Widget](https://github.com/HusterYP/UI/blob/master/Pic/Widget.gif =400x600)
 
 配套博客参见: [ReadMe](https://github.com/HusterYP/UI/blob/master/UIList/app/src/main/java/com/example/yuanping/uilist/widget/ReadMe.md)
 
