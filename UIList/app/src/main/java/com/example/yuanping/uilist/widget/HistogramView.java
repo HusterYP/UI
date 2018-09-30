@@ -69,7 +69,7 @@ public class HistogramView extends View {
         // 绘制item
         mPaint.setStyle(Paint.Style.FILL);
         for (int i = 0; i < items.length; i++) {
-            mPaint.setColor(Color.parseColor("#3AE71D"));
+            mPaint.setColor(Color.parseColor("#6C7F69"));
             int left = 100 + itemGap * (i + 1) + itemWidth * i;
             int top = ((int) (Math.random() * histogramMaxHeight));
             int right = 100 + itemGap * (i + 1) + itemWidth * (i + 1);
