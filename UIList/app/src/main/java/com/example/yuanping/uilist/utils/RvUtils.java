@@ -1,17 +1,12 @@
 package com.example.yuanping.uilist.utils;
 
 import android.content.Context;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
-import android.support.annotation.DrawableRes;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.View;
 
 import com.example.yuanping.uilist.Application;
 import com.example.yuanping.uilist.CommonAdapter;
-import com.example.yuanping.uilist.R;
 
 import java.util.List;
 
@@ -24,8 +19,9 @@ import java.util.List;
 public class RvUtils {
     public static void setCommonRv(RecyclerView rv, List<Class> listeners,
                                    List<String> titles, Context context) {
-        rv.setLayoutManager(new LinearLayoutManager(Application.sAppContext, LinearLayoutManager.VERTICAL, false));
-        rv.addItemDecoration(new DividerItemDecoration(context,DividerItemDecoration.VERTICAL));
+        rv.setLayoutManager(new LinearLayoutManager(Application.sAppContext, LinearLayoutManager
+                .VERTICAL, false));
+        rv.addItemDecoration(new DividerItemDecoration(context, DividerItemDecoration.VERTICAL));
         rv.setAdapter(new CommonAdapter(titles, listeners, context));
     }
 }

@@ -7,8 +7,7 @@ import com.example.yuanping.uilist.Application;
 /**
  * @created by PingYuan at 8/2/18
  * @email: husteryp@gmail.com
- * @description:
- * Use this class to get the resource from app
+ * @description: Use this class to get the resource from app
  */
 public class AssetsUtils {
     private static Context sContext = Application.sAppContext;

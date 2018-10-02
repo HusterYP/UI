@@ -8,7 +8,6 @@ import android.graphics.Canvas;
 import android.graphics.ComposeShader;
 import android.graphics.Paint;
 import android.graphics.PorterDuff;
-import android.graphics.PorterDuffXfermode;
 import android.graphics.Shader;
 import android.os.Build;
 import android.support.annotation.Nullable;
@@ -18,8 +17,6 @@ import android.view.View;
 
 import com.example.yuanping.uilist.R;
 import com.example.yuanping.uilist.utils.ScreenUtils;
-
-import javax.xml.validation.TypeInfoProvider;
 
 /**
  * @created by PingYuan at 9/30/18

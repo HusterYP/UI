@@ -1,16 +1,13 @@
 package com.example.yuanping.uilist.utils;
 
-import android.app.Activity;
 import android.content.Context;
-import android.util.DisplayMetrics;
 
 import com.example.yuanping.uilist.Application;
 
 /**
  * @created by PingYuan at 8/2/18
  * @email: husteryp@gmail.com
- * @description:
- * Use this class to help get the information about the screen !
+ * @description: Use this class to help get the information about the screen !
  */
 public class ScreenUtils {
 

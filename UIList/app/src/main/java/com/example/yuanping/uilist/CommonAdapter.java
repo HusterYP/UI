@@ -14,8 +14,7 @@ import java.util.List;
 /**
  * @created by PingYuan at 8/2/18
  * @email: husteryp@gmail.com
- * @description:
- * Common Adapter
+ * @description: Common Adapter
  */
 
 public class CommonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
@@ -33,16 +32,17 @@ public class CommonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_activity, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_activity,
+                parent, false);
         return new RvViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, final int position) {
-        ((RvViewHolder)holder).tvItem.setText(titles.get(position));
-        ((RvViewHolder)holder).tvItem.setClickable(true);
+        ((RvViewHolder) holder).tvItem.setText(titles.get(position));
+        ((RvViewHolder) holder).tvItem.setClickable(true);
         if (listeners != null && listeners.size() == titles.size()) {
-            ((RvViewHolder)holder).tvItem.setOnClickListener(new View.OnClickListener(){
+            ((RvViewHolder) holder).tvItem.setOnClickListener(new View.OnClickListener() {
 
                 @Override
                 public void onClick(View v) {

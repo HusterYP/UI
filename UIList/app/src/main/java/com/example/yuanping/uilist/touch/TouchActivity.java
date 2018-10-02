@@ -2,7 +2,6 @@ package com.example.yuanping.uilist.touch;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.ViewGroup;
 
 import com.example.yuanping.uilist.R;
 

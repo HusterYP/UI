@@ -5,7 +5,6 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.Button;
 
 import com.example.yuanping.uilist.R;
 import com.example.yuanping.uilist.widget.practice2.BitmapShaderView;

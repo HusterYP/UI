@@ -51,6 +51,7 @@ public class RectView extends View {
         int height = getMeasuredHeight();
         mPaint.setStyle(Paint.Style.FILL);
         mPaint.setColor(Color.BLACK);
-        canvas.drawRect(width / 2 - 100, height / 2 - 100, width / 2 + 100, height / 2 + 100, mPaint);
+        canvas.drawRect(width / 2 - 100, height / 2 - 100, width / 2 + 100, height / 2 + 100,
+                mPaint);
     }
 }
