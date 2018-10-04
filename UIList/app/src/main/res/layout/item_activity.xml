@@ -4,14 +4,14 @@
     android:layout_height="46dp">
 
     <TextView
+        android:id="@+id/tv_item_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textAllCaps="false"
-        android:textSize="50px"
-        android:gravity="center"
         android:background="@android:color/darker_gray"
-        android:text="Hello World"
         android:clickable="true"
-        android:id="@+id/tv_item_main"/>
+        android:gravity="center"
+        android:text="Hello World"
+        android:textAllCaps="false"
+        android:textSize="50px" />
 
 </RelativeLayout>

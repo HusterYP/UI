@@ -9,6 +9,14 @@ import android.widget.Button;
 
 import com.example.yuanping.uilist.R;
 import com.example.yuanping.uilist.widget.practice4.ClipRectView;
+import com.example.yuanping.uilist.widget.practice5.DispatchDrawView;
+import com.example.yuanping.uilist.widget.practice5.InsertAfterDrawView;
+import com.example.yuanping.uilist.widget.practice5.InsertAfterOnDrawForegroundView;
+import com.example.yuanping.uilist.widget.practice5.InsertAfterOnDrawView;
+import com.example.yuanping.uilist.widget.practice5.InsertBeforeDrawView;
+import com.example.yuanping.uilist.widget.practice5.InsertBeforeOnDrawForegroundView;
+import com.example.yuanping.uilist.widget.practice5.InsertBeforeOnDrawView;
+import com.example.yuanping.uilist.widget.practice5.OnDrawLayoutView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,16 +46,15 @@ public class Practice5 extends AppCompatActivity {
         titles.add("draw()-后插");
         titles.add("draw()-前插");
 
-
         List<Fragment> fragments = new ArrayList<>();
-        fragments.add(new UIFragment(new Button(this)));
-        fragments.add(new UIFragment(new Button(this)));
-        fragments.add(new UIFragment(new Button(this)));
-        fragments.add(new UIFragment(new Button(this)));
-        fragments.add(new UIFragment(new Button(this)));
-        fragments.add(new UIFragment(new Button(this)));
-        fragments.add(new UIFragment(new Button(this)));
-        fragments.add(new UIFragment(new Button(this)));
+        fragments.add(new UIFragment(new InsertAfterOnDrawView(this)));
+        fragments.add(new UIFragment(new InsertBeforeOnDrawView(this)));
+        fragments.add(new UIFragment(new OnDrawLayoutView(this)));
+        fragments.add(new UIFragment(new DispatchDrawView(this)));
+        fragments.add(new UIFragment(new InsertAfterOnDrawForegroundView(this)));
+        fragments.add(new UIFragment(new InsertBeforeOnDrawForegroundView(this)));
+        fragments.add(new UIFragment(new InsertAfterDrawView(this)));
+        fragments.add(new UIFragment(new InsertBeforeDrawView(this)));
 
         UIPagerAdapter adapter = new UIPagerAdapter(titles, fragments, getSupportFragmentManager());
 
