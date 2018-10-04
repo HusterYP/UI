@@ -7,6 +7,8 @@ import android.graphics.Paint;
 import android.support.v7.widget.AppCompatEditText;
 import android.util.AttributeSet;
 
+import com.example.yuanping.uilist.R;
+
 /**
  * @created by PingYuan at 10/4/18
  * @email: husteryp@gmail.com
@@ -24,6 +26,10 @@ public class InsertBeforeDrawView extends AppCompatEditText {
 
     public InsertBeforeDrawView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+    }
+
+    {
+        setText(getResources().getString(R.string.hello));
     }
 
     @Override

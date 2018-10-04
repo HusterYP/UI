@@ -56,3 +56,10 @@
 <img src="https://github.com/HusterYP/UI/blob/master/Pic/practice4.gif" width="400" height="600"/>
 
 配套博客参见: [ReadMe](https://github.com/HusterYP/UI/blob/master/UIList/app/src/main/java/com/example/yuanping/uilist/widget/practice4/ReadMe.md)
+
+
+#### 4.4 practice5
+
+<img src="https://github.com/HusterYP/UI/blob/master/Pic/practice5.gif" width="400" height="600"/>
+
+配套博客参见: [ReadMe](https://github.com/HusterYP/UI/blob/master/UIList/app/src/main/java/com/example/yuanping/uilist/widget/practice5/ReadMe.md)

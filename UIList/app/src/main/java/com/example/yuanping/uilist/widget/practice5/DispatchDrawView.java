@@ -50,6 +50,14 @@ public class DispatchDrawView extends LinearLayout {
         setWillNotDraw(false);
         mPaint.setColor(Color.parseColor("#FFC107"));
         mBitmap = BitmapUtils.getRawBitmap(getResources(), R.drawable.batman);
+        ImageView imageView = new ImageView(getContext());
+        imageView.setBackground(new BitmapDrawable(mBitmap));
+        addView(imageView);
+        TextView textView = new TextView(getContext());
+        textView.setBackgroundColor(Color.GRAY);
+        textView.setTextSize(25);
+        textView.setText("Batman");
+        addView(textView);
     }
 
     @Override
@@ -59,14 +67,6 @@ public class DispatchDrawView extends LinearLayout {
         layoutParams.width = LayoutParams.WRAP_CONTENT;
         layoutParams.height = LayoutParams.WRAP_CONTENT;
         setOrientation(LinearLayout.VERTICAL);
-        ImageView imageView = new ImageView(getContext());
-        imageView.setBackground(new BitmapDrawable(mBitmap));
-        addView(imageView);
-        TextView textView = new TextView(getContext());
-        textView.setBackgroundColor(Color.GRAY);
-        textView.setTextSize(25);
-        textView.setText("Batman");
-        addView(textView);
     }
 
     @Override
