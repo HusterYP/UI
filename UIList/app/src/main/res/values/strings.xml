@@ -11,4 +11,20 @@
     <string name="practice5">Practice5</string>
     <string name="text">Hello, WelCome !\nThis Project is HusterYP\'s UI Practice\nSome of them are awesome\nAnd I will update it irregularly</string>
     <string name="hello">Hello, Welcome to UI Practice !</string>
+    <string name="practice6">Practice6</string>
+    <string-array name="interpolators" >
+        <item>AccelerateDecelerateInterpolator</item>
+        <item>LinearInterpolator</item>
+        <item>AccelerateInterpolator</item>
+        <item>DecelerateInterpolator</item>
+        <item>AnticipateInterpolator</item>
+        <item>OvershootInterpolator</item>
+        <item>AnticipateOvershootInterpolator</item>
+        <item>BounceInterpolator</item>
+        <item>CycleInterpolator</item>
+        <item>PathInterpolator</item>
+        <item>FastOutLinearInInterpolator</item>
+        <item>FastOutSlowInInterpolator</item>
+        <item>LinearOutSlowInInterpolator</item>
+    </string-array>
 </resources>

@@ -25,7 +25,8 @@
         <activity android:name=".ui.ChoseActivity" />
         <activity android:name=".ui.Practice2" />
         <activity android:name=".ui.Practice4" />
-        <activity android:name=".ui.Practice5"></activity>
+        <activity android:name=".ui.Practice5" />
+        <activity android:name=".ui.Practice6"></activity>
     </application>
 
 </manifest>

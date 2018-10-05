@@ -63,3 +63,13 @@
 <img src="https://github.com/HusterYP/UI/blob/master/Pic/practice5.gif" width="400" height="600"/>
 
 配套博客参见: [ReadMe](https://github.com/HusterYP/UI/blob/master/UIList/app/src/main/java/com/example/yuanping/uilist/widget/practice5/ReadMe.md)
+
+
+#### 4.5 practice6
+
+
+参见[Android动画详解](https://husteryp.github.io/2018/10/04/Android%E5%8A%A8%E7%94%BB%E8%AF%A6%E8%A7%A3/)
+
+<img src="https://github.com/HusterYP/UI/blob/master/Pic/practice6.gif" width="400" height="600"/>
+
+配套博客参见: [ReadMe](https://github.com/HusterYP/UI/blob/master/UIList/app/src/main/java/com/example/yuanping/uilist/widget/practice6/ReadMe.md)

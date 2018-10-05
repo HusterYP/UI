@@ -31,6 +31,7 @@ public class ChoseActivity extends AppCompatActivity {
         titles.add(AssetsUtils.getStringFromResource(R.string.practice2));
         titles.add(AssetsUtils.getStringFromResource(R.string.practice4));
         titles.add(AssetsUtils.getStringFromResource(R.string.practice5));
+        titles.add(AssetsUtils.getStringFromResource(R.string.practice6));
         return titles;
     }
 
@@ -40,6 +41,7 @@ public class ChoseActivity extends AppCompatActivity {
         listeners.add(Practice2.class);
         listeners.add(Practice4.class);
         listeners.add(Practice5.class);
+        listeners.add(Practice6.class);
         return listeners;
     }
 }
