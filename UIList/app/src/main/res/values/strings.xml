@@ -12,7 +12,8 @@
     <string name="text">Hello, WelCome !\nThis Project is HusterYP\'s UI Practice\nSome of them are awesome\nAnd I will update it irregularly</string>
     <string name="hello">Hello, Welcome to UI Practice !</string>
     <string name="practice6">Practice6</string>
-    <string-array name="interpolators" >
+    <string name="practice7">Practice7</string>
+    <string-array name="interpolators">
         <item>AccelerateDecelerateInterpolator</item>
         <item>LinearInterpolator</item>
         <item>AccelerateInterpolator</item>

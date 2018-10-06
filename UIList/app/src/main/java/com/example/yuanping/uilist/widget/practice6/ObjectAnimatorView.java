@@ -64,6 +64,7 @@ public class ObjectAnimatorView extends RelativeLayout implements View.OnClickLi
         btParams.rightMargin = 20;
         btParams.bottomMargin = 20;
         mButton.setLayoutParams(btParams);
+        mButton.setText("Animate");
         addView(mButton);
         mObjectAnimator.setDuration(1000);
     }
