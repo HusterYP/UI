@@ -11,7 +11,7 @@ import com.example.yuanping.uilist.utils.RvUtils;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ChoseActivity extends AppCompatActivity {
+public class Practice8 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,25 +27,13 @@ public class ChoseActivity extends AppCompatActivity {
 
     private List<String> getTitles() {
         List<String> titles = new ArrayList<>();
-        titles.add(AssetsUtils.getStringFromResource(R.string.practice1));
-        titles.add(AssetsUtils.getStringFromResource(R.string.practice2));
-        titles.add(AssetsUtils.getStringFromResource(R.string.practice4));
-        titles.add(AssetsUtils.getStringFromResource(R.string.practice5));
-        titles.add(AssetsUtils.getStringFromResource(R.string.practice6));
-        titles.add(AssetsUtils.getStringFromResource(R.string.practice7));
-        titles.add(AssetsUtils.getStringFromResource(R.string.practice8));
+        titles.add(AssetsUtils.getStringFromResource(R.string.practice_test));
         return titles;
     }
 
     private List<Class> getClazz() {
         List<Class> listeners = new ArrayList<>();
-        listeners.add(Practice1.class);
-        listeners.add(Practice2.class);
-        listeners.add(Practice4.class);
-        listeners.add(Practice5.class);
-        listeners.add(Practice6.class);
-        listeners.add(Practice7.class);
-        listeners.add(Practice8.class);
+        listeners.add(JikeActivity.class);
         return listeners;
     }
 }

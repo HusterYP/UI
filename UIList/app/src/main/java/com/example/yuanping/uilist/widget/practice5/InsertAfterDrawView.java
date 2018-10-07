@@ -1,7 +1,6 @@
 package com.example.yuanping.uilist.widget.practice5;
 
 import android.content.Context;
-import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;

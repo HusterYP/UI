@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/jike_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@mipmap/jike_like_unselected" />
+
+    <ImageView
+        android:id="@+id/jike_shine"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@mipmap/jike_like_selected_shining"
+        android:visibility="invisible" />
+
+    <com.example.yuanping.uilist.widget.practice8.JikeTextView
+        android:id="@+id/jike_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/jike_img" />
+
+</RelativeLayout>

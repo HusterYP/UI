@@ -13,6 +13,8 @@
     <string name="hello">Hello, Welcome to UI Practice !</string>
     <string name="practice6">Practice6</string>
     <string name="practice7">Practice7</string>
+    <string name="practice8">Practice8</string>
+    <string name="practice_test">JikeLikeView</string>
     <string-array name="interpolators">
         <item>AccelerateDecelerateInterpolator</item>
         <item>LinearInterpolator</item>
