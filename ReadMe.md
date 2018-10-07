@@ -82,3 +82,14 @@
 <img src="https://github.com/HusterYP/UI/blob/master/Pic/practice7.gif" width="400" height="600"/>
 
 配套博客参见: [ReadMe](https://github.com/HusterYP/UI/blob/master/UIList/app/src/main/java/com/example/yuanping/uilist/widget/practice7/ReadMe.md)
+
+
+#### 4.6 practice8
+
+> `UI`仿写
+
+##### 4.6.1 即刻点赞效果
+
+<img src="https://github.com/HusterYP/UI/blob/master/Pic/practice8_jike.gif" width="400" height="600"/>
+
+实现思路参见: 
