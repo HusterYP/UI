@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000">
+
+        <com.example.yuanping.uilist.widget.practice9.SquareImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/avatar_rengwuxian" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/instruct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="26dp"
+        android:text="外框调节"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/change_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="宽度调节" />
+
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/width_seekBar"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@id/instruct"
+        android:layout_toStartOf="@id/change_height"
+        android:max="100"
+        android:progress="0" />
+
+    <TextView
+        android:id="@+id/change_width"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/width_seekBar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:text="高度调节" />
+
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/height_seekBar"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/width_seekBar"
+        android:layout_toEndOf="@id/instruct"
+        android:layout_toStartOf="@id/change_width"
+        android:max="100"
+        android:progress="0" />
+
+</RelativeLayout>

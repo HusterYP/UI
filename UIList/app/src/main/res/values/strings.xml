@@ -15,6 +15,7 @@
     <string name="practice7">Practice7</string>
     <string name="practice8">Practice8</string>
     <string name="practice_test">JikeLikeView</string>
+    <string name="practice9">Practice9</string>
     <string-array name="interpolators">
         <item>AccelerateDecelerateInterpolator</item>
         <item>LinearInterpolator</item>

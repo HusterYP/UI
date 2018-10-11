@@ -29,7 +29,8 @@
         <activity android:name=".ui.Practice6" />
         <activity android:name=".ui.Practice7" />
         <activity android:name=".ui.Practice8" />
-        <activity android:name=".ui.JikeActivity"></activity>
+        <activity android:name=".ui.JikeActivity" />
+        <activity android:name=".ui.Practice9"></activity>
     </application>
 
 </manifest>

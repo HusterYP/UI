@@ -93,3 +93,10 @@
 <img src="https://github.com/HusterYP/UI/blob/master/Pic/practice8_jike.gif" width="400" height="600"/>
 
 实现思路参见: [即刻点赞效果](https://github.com/HusterYP/UI/blob/master/UIList/app/src/main/java/com/example/yuanping/uilist/widget/practice8/%E5%8D%B3%E5%88%BB%E7%82%B9%E8%B5%9E%E6%95%88%E6%9E%9C.md)
+
+
+#### 4.8 practice9 
+
+<img src="https://github.com/HusterYP/UI/blob/master/Pic/practice9.gif" width="400" height="600"/>
+
+配套博客参见: [ReadMe](https://github.com/HusterYP/UI/blob/master/UIList/app/src/main/java/com/example/yuanping/uilist/widget/practice9/ReadMe.md)
