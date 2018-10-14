@@ -5,8 +5,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 
 import com.example.yuanping.uilist.drag.DragActivity;
+import com.example.yuanping.uilist.lifecycle.LifeCycleChoseActivity;
 import com.example.yuanping.uilist.touch.TouchActivity;
-import com.example.yuanping.uilist.ui.ChoseActivity;
+import com.example.yuanping.uilist.ui.UIChoseActivity;
 import com.example.yuanping.uilist.utils.AssetsUtils;
 import com.example.yuanping.uilist.utils.RvUtils;
 
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         titles.add(AssetsUtils.getStringFromResource(R.string.drag));
         titles.add(AssetsUtils.getStringFromResource(R.string.touch_event));
         titles.add(AssetsUtils.getStringFromResource(R.string.ui));
+        titles.add(AssetsUtils.getStringFromResource(R.string.lifecycle));
         return titles;
     }
 
@@ -44,7 +46,8 @@ public class MainActivity extends AppCompatActivity {
         List<Class> listeners = new ArrayList<>();
         listeners.add(DragActivity.class);
         listeners.add(TouchActivity.class);
-        listeners.add(ChoseActivity.class);
+        listeners.add(UIChoseActivity.class);
+        listeners.add(LifeCycleChoseActivity.class);
         return listeners;
     }
 }

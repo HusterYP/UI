@@ -16,6 +16,11 @@
     <string name="practice8">Practice8</string>
     <string name="practice_test">JikeLikeView</string>
     <string name="practice9">Practice9</string>
+    <string name="lifecycle">LifeCycle</string>
+    <string name="activity">Activity</string>
+    <string name="common">CommonActivity</string>
+    <string name="exception">Exception Activity</string>
+    <string name="special">Special Activity</string>
     <string-array name="interpolators">
         <item>AccelerateDecelerateInterpolator</item>
         <item>LinearInterpolator</item>

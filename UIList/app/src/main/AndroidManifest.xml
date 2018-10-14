@@ -22,7 +22,7 @@
         <activity android:name=".drag.DragViewSecond" />
         <activity android:name=".touch.TouchActivity" />
         <activity android:name=".ui.Practice1" />
-        <activity android:name=".ui.ChoseActivity" />
+        <activity android:name=".ui.UIChoseActivity" />
         <activity android:name=".ui.Practice2" />
         <activity android:name=".ui.Practice4" />
         <activity android:name=".ui.Practice5" />
@@ -30,7 +30,16 @@
         <activity android:name=".ui.Practice7" />
         <activity android:name=".ui.Practice8" />
         <activity android:name=".ui.JikeActivity" />
-        <activity android:name=".ui.Practice9"></activity>
+        <activity android:name=".ui.Practice9" />
+        <activity android:name=".lifecycle.LifeCycleChoseActivity" />
+        <activity android:name=".lifecycle.activity.ActivityLifeCycleChose" />
+        <activity android:name=".lifecycle.activity.CommonAActivity" />
+        <activity android:name=".lifecycle.activity.CommonBActivity" />
+        <activity android:name=".lifecycle.activity.ExceptionActivity" />
+        <activity android:name=".lifecycle.activity.SpecialActivity" />
+        <activity
+            android:name=".lifecycle.activity.TransparentActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
     </application>
 
 </manifest>

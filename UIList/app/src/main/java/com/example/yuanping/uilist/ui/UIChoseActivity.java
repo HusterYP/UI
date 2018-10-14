@@ -11,7 +11,7 @@ import com.example.yuanping.uilist.utils.RvUtils;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ChoseActivity extends AppCompatActivity {
+public class UIChoseActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
