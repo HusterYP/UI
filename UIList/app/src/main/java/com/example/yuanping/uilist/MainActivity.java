@@ -6,6 +6,7 @@ import android.support.v7.widget.RecyclerView;
 
 import com.example.yuanping.uilist.drag.DragActivity;
 import com.example.yuanping.uilist.lifecycle.LifeCycleChoseActivity;
+import com.example.yuanping.uilist.service.ServiceChoseActivity;
 import com.example.yuanping.uilist.touch.TouchActivity;
 import com.example.yuanping.uilist.ui.UIChoseActivity;
 import com.example.yuanping.uilist.utils.AssetsUtils;
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         titles.add(AssetsUtils.getStringFromResource(R.string.touch_event));
         titles.add(AssetsUtils.getStringFromResource(R.string.ui));
         titles.add(AssetsUtils.getStringFromResource(R.string.lifecycle));
+        titles.add(AssetsUtils.getStringFromResource(R.string.service));
         return titles;
     }
 
@@ -48,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
         listeners.add(TouchActivity.class);
         listeners.add(UIChoseActivity.class);
         listeners.add(LifeCycleChoseActivity.class);
+        listeners.add(ServiceChoseActivity.class);
         return listeners;
     }
 }

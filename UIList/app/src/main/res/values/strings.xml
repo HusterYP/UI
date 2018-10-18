@@ -21,6 +21,10 @@
     <string name="common">CommonActivity</string>
     <string name="exception">Exception Activity</string>
     <string name="special">Special Activity</string>
+    <string name="service">Service</string>
+    <string name="start_service">启动服务</string>
+    <string name="bind_service">绑定服务</string>
+    <string name="foreground_service">前台服务</string>
     <string-array name="interpolators">
         <item>AccelerateDecelerateInterpolator</item>
         <item>LinearInterpolator</item>

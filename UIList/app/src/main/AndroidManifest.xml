@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.yuanping.uilist">
 
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
     <application
         android:name=".Application"
         android:allowBackup="true"
@@ -40,6 +42,32 @@
         <activity
             android:name=".lifecycle.activity.TransparentActivity"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".service.ServiceChoseActivity" />
+
+        <service
+            android:name=".service.StartService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".service.StartServiceActivity" />
+        <activity android:name=".service.BindServiceActivity" />
+
+        <service
+            android:name=".service.BindServiceOfBinder"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".service.BindServiceOfMsg"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remote" />
+
+        <activity android:name=".service.ForegroundActivity" />
+
+        <service
+            android:name=".service.ForegroundService"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
 
 </manifest>

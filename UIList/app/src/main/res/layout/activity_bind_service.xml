@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/start_service_of_binder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:onClick="startServiceOfBinder"
+        android:text="Start Service of Binder"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/stop_service_of_binder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/start_service_of_binder"
+        android:layout_centerHorizontal="true"
+        android:onClick="stopServiceOfBinder"
+        android:text="Stop Service Of Binder"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/start_service_of_messenger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stop_service_of_binder"
+        android:layout_centerHorizontal="true"
+        android:onClick="startServiceOfMsg"
+        android:text="Start Service of Messenger"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/stop_service_of_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/start_service_of_messenger"
+        android:layout_centerHorizontal="true"
+        android:onClick="stopServiceOfMsg"
+        android:text="Stop Service Of Messenger"
+        android:textAllCaps="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stop_service_of_msg"
+        android:layout_centerHorizontal="true"
+        android:onClick="sendMsg"
+        android:text="sendMsg"
+        android:textAllCaps="false" />
+
+</RelativeLayout>
