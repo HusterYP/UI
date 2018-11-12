@@ -1,10 +1,12 @@
 package com.example.yuanping.uilist;
 
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 
 import com.example.yuanping.uilist.drag.DragActivity;
+import com.example.yuanping.uilist.floating.FloatingButtonActivity;
 import com.example.yuanping.uilist.lifecycle.LifeCycleChoseActivity;
 import com.example.yuanping.uilist.service.ServiceChoseActivity;
 import com.example.yuanping.uilist.touch.TouchActivity;
@@ -32,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     private void initView() {
         RecyclerView rvRoot = findViewById(R.id.rv_root);
         RvUtils.setCommonRv(rvRoot, getClazz(), getTitles(), this);
+        FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
     }
 
     private List<String> getTitles() {
@@ -41,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         titles.add(AssetsUtils.getStringFromResource(R.string.ui));
         titles.add(AssetsUtils.getStringFromResource(R.string.lifecycle));
         titles.add(AssetsUtils.getStringFromResource(R.string.service));
+        titles.add(AssetsUtils.getStringFromResource(R.string.floating_butFloaton));
         return titles;
     }
 
@@ -51,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
         listeners.add(UIChoseActivity.class);
         listeners.add(LifeCycleChoseActivity.class);
         listeners.add(ServiceChoseActivity.class);
+        listeners.add(FloatingButtonActivity.class);
         return listeners;
     }
 }

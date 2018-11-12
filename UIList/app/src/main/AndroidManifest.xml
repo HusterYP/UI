@@ -67,7 +67,9 @@
         <service
             android:name=".service.ForegroundService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true" />
+
+        <activity android:name=".floating.FloatingButtonActivity"></activity>
     </application>
 
 </manifest>
