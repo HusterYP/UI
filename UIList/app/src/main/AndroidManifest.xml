@@ -69,7 +69,8 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".floating.FloatingButtonActivity"></activity>
+        <activity android:name=".floating.FloatingButtonActivity" />
+        <activity android:name=".stick.StickActivity"></activity>
     </application>
 
 </manifest>

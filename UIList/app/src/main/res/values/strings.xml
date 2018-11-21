@@ -26,6 +26,7 @@
     <string name="bind_service">绑定服务</string>
     <string name="foreground_service">前台服务</string>
     <string name="floating_butFloaton">FloatingButton</string>
+    <string name="stick_view">StickRecyclerView</string>
     <string-array name="interpolators">
         <item>AccelerateDecelerateInterpolator</item>
         <item>LinearInterpolator</item>

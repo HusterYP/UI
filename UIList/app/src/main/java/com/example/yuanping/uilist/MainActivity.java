@@ -9,6 +9,7 @@ import com.example.yuanping.uilist.drag.DragActivity;
 import com.example.yuanping.uilist.floating.FloatingButtonActivity;
 import com.example.yuanping.uilist.lifecycle.LifeCycleChoseActivity;
 import com.example.yuanping.uilist.service.ServiceChoseActivity;
+import com.example.yuanping.uilist.stick.StickActivity;
 import com.example.yuanping.uilist.touch.TouchActivity;
 import com.example.yuanping.uilist.ui.UIChoseActivity;
 import com.example.yuanping.uilist.utils.AssetsUtils;
@@ -45,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         titles.add(AssetsUtils.getStringFromResource(R.string.lifecycle));
         titles.add(AssetsUtils.getStringFromResource(R.string.service));
         titles.add(AssetsUtils.getStringFromResource(R.string.floating_butFloaton));
+        titles.add(AssetsUtils.getStringFromResource(R.string.stick_view));
         return titles;
     }
 
@@ -56,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
         listeners.add(LifeCycleChoseActivity.class);
         listeners.add(ServiceChoseActivity.class);
         listeners.add(FloatingButtonActivity.class);
+        listeners.add(StickActivity.class);
         return listeners;
     }
 }
